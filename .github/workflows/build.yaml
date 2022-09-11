@@ -79,6 +79,10 @@ jobs:
           )
         endif()
 
+    - name: Install Conan
+      id: conan
+      uses: turtlebrowser/get-conan@main
+
     - name: Configure
       shell: cmake -P {0}
       run: |
